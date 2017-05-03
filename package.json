@@ -1,7 +1,7 @@
 {
   "name": "react-native-blink-view",
-  "version": "0.0.1",
-  "description": "A <BlinkView /> component for react-native to make blinking its subview",
+  "version": "0.0.2",
+  "description": "A <BlinkView /> component for react-native to make blinking subviews",
   "main": "BlinkView.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,7 +20,7 @@
     "blinking-component"
   ],
   "author": "Brice Pissard",
-  "license": "MIT",
+  "license": "GNU",
   "bugs": {
     "url": "https://github.com/BricePissard/react-native-blink-view/issues"
   },

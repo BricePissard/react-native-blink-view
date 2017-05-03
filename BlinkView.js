@@ -24,7 +24,7 @@ export default React.createClass({
    */
   propTypes: {
     delay   : PropTypes.number,
-    visible : PropTypes.bool
+    binking : PropTypes.bool
   },
 
   /**
@@ -35,7 +35,7 @@ export default React.createClass({
   {
     return {
       delay   : 1500,
-      visible : true
+      binking : true
     }
   },
 
@@ -47,21 +47,24 @@ export default React.createClass({
   {
     return {
       delay     : this.props.delay,
-      blinkAnim : new Animated.Value( this.props.visible === true ? 1 : 0 )
+      blinkAnim : new Animated.Value( 0 )
     };
   },
 
   componentWillMount():void
   {
-    this.clearInterval( this._onDelay );
-    this._onDelay = this.setInterval( ():void =>
+    if ( this.props.binking === true )
     {
-      this.state.blinkAnim.stopAnimation();
-      Animated.timing( this.state.blinkAnim, {
-        toValue   : this.state.blinkAnim._value === 0 ? 1 : 0,
-        duration  : this.state.delay-1
-      }).start();
-    }, this.state.delay+1 );
+      this.clearInterval( this._onDelay );
+      this._onDelay = this.setInterval( ():void =>
+      {
+        this.state.blinkAnim.stopAnimation();
+        Animated.timing( this.state.blinkAnim, {
+          toValue   : this.state.blinkAnim._value === 0 ? 1 : 0,
+          duration  : this.state.delay-1
+        }).start();
+      }, this.state.delay+1 );
+    }
   },
 
   componentWillUnmount():void
@@ -71,7 +74,7 @@ export default React.createClass({
 
   render():View
   {
-    return (
+    return ( this.props.binking === true ) ? (
       <Animated.View
         {...this.props}
         style = {[ this.props.style, { opacity: this.state.blinkAnim.interpolate({
@@ -80,7 +83,12 @@ export default React.createClass({
         })} ]}>
         {this.props.children}
       </Animated.View>
-    );
+    )
+    :
+    <View {...this.props}>
+      {this.props.children}
+    </View>
+    ;
   },
 
 });
