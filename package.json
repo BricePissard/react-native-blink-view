@@ -4,7 +4,13 @@
   "description": "A <BlinkView /> component for react-native to make blinking subviews",
   "main": "BlinkView.js",
   "scripts": {
+    "lint": "eslint --ext .js,.jsx",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "preset": "react-native"
   },
   "repository": {
     "type": "git",
@@ -20,13 +26,39 @@
     "blinking-component"
   ],
   "author": "Brice Pissard",
-  "license": "GNU",
+  "license": "OSL-3.0",
   "bugs": {
     "url": "https://github.com/BricePissard/react-native-blink-view/issues"
   },
   "homepage": "https://github.com/BricePissard/react-native-blink-view#readme",
   "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^3.19.0",
     "prop-types": "^15.5.8",
-    "react-timer-mixin": "^0.13.3"
+    "react": "^16.0.0-alpha.6",
+    "react-dom": "^15.4.0",
+    "react-native": "^0.44.0",
+    "react-test-renderer": "^15.5.4",
+    "react-timer-mixin": "^0.13.3",
+    "webpack": "^2.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-module-resolver": "^2.7.0",
+    "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.23.0",
+    "babel-jest": "*",
+    "eslint": "^3.18.0",
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-react": "^6.10.3",
+    "jest": "^20.0.0"
   }
 }

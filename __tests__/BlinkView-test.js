@@ -1,19 +1,20 @@
 'use strict';
 
 import React from 'react';
-import { Text } from "react-native";
-import ReactTestRenderer from 'react-test-renderer';
-import BlinkViewTest from '../BlinkView';
+import { Text, View } from "react-native";
+import BlinkViewTest from '../Sample';
+
+import renderer from 'react-test-renderer';
+//const ReactShallowRenderer = require('react-test-renderer/shallow');
 
 jest.disableAutomock();
 
 describe('BlinkView', () => {
 	it('should renders the BlinkView correctly', () => {
-		const instance = ReactTestRenderer.create(
-			<BlinkView binking={this.state.isBlinking?true:false} delay={2000}>
-				<Text>Hello World</Text>
-			</BlinkView>
-		);
+		//const renderer = new ReactShallowRenderer();
+		//renderer.render(
+		const instance = renderer.create(<BlinkViewTest/>).toJSON();
+
 		expect(true).toBe(true);
 	});
 });
