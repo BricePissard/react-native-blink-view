@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "iojs"
+  - "6"
+
+os:
+  - linux
+  - osx
+
+install:
+  - npm -g install npm
+  - npm install
+
+script:
+  - "npm test"

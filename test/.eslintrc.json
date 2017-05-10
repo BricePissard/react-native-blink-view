@@ -1,0 +1,17 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+  },
+  "rules": {
+    "semi": 2
+  },
+  "env": {
+    "mocha": true,
+    "es6": true,
+    "node": true
+  }
+}

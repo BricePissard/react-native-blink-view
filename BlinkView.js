@@ -1,6 +1,7 @@
 /* @flow */
 /* eslint-disable prefer-const */
 /* jshint esversion: 6 */
+/* eslint-env node, mocha */
 'use strict';
 
 import React, { Component } from 'react';
