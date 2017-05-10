@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "iojs"
-  - "6"
+  - "7"
 
 os:
   - linux
@@ -10,6 +10,7 @@ os:
 install:
   - npm -g install npm
   - npm install
+  - npm update
 
 script:
   - "npm test"
