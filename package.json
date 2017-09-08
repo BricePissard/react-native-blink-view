@@ -1,6 +1,6 @@
 {
   "name": "react-native-blink-view",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A <BlinkView /> component for react-native to make blinking subviews",
   "main": "BlinkView.js",
   "scripts": {
@@ -32,33 +32,33 @@
   },
   "homepage": "https://github.com/BricePissard/react-native-blink-view#readme",
   "dependencies": {
-    "babel-core": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "create-react-class": "^15.6.0",
     "eslint": "^3.19.0",
-    "prop-types": "^15.5.8",
-    "react": "^16.0.0-alpha.6",
-    "react-dom": "^15.4.0",
-    "react-native": "^0.44.0",
-    "react-test-renderer": "^15.5.4",
+    "prop-types": "^15.5.10",
+    "react": "^16.0.0-beta.12",
+    "react-dom": "^15.6.1",
+    "react-native": "^0.47.2",
+    "react-test-renderer": "^15.6.1",
     "react-timer-mixin": "^0.13.3",
-    "webpack": "^2.5.1"
+    "webpack": "^2.7.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
+    "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.1",
+    "babel-jest": "^20.0.3",
     "babel-loader": "^6.4.1",
-    "babel-plugin-module-resolver": "^2.7.0",
+    "babel-plugin-module-resolver": "^2.7.1",
     "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-react": "^6.24.1",
-    "babel-runtime": "^6.23.0",
-    "babel-jest": "*",
+    "babel-runtime": "^6.25.0",
     "eslint": "^3.18.0",
     "eslint-config-defaults": "^9.0.0",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-react": "^6.10.3",
-    "jest": "^20.0.0"
+    "jest": "^20.0.4"
   }
 }

@@ -7,9 +7,10 @@
 import React, { Component } from 'react';
 import PropTypes            from "prop-types";
 import { View, Animated }   from 'react-native';
+import createReactClass     from "create-react-class";
 import TimerMixin           from "react-timer-mixin";
 
-export default React.createClass({
+export default createReactClass({
   displayName : 'BlinkView',
   mixins      : [ TimerMixin ],
 
@@ -24,8 +25,9 @@ export default React.createClass({
    * @type {Object}
    */
   propTypes: {
-    delay   : PropTypes.number,
-    binking : PropTypes.bool
+    children : PropTypes.any,
+    delay    : PropTypes.number,
+    binking  : PropTypes.bool
   },
 
   /**
@@ -35,8 +37,9 @@ export default React.createClass({
   getDefaultProps():Object
   {
     return {
-      delay   : 1500,
-      binking : true
+      children : null,
+      delay    : 1500,
+      binking  : true
     }
   },
 
