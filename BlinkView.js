@@ -4,9 +4,9 @@
 /* eslint-env node, mocha */
 'use strict';
 
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import PropTypes            from "prop-types";
-import { View, Animated }   from 'react-native';
+import { View, Animated }   from "react-native";
 import createReactClass     from "create-react-class";
 import TimerMixin           from "react-timer-mixin";
 
