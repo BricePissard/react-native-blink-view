@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/react-native-blink-view.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-native-blink-view/)
 
-A Simple &lt;View> handler that allows a smooth blinking opacity animation on any animatable Component.
+A Simple &lt;View /> handler that allows a smooth blinking opacity animation on any animatable &lt;Component />.
 
 ## Installation
 ```sh
@@ -19,7 +19,7 @@ react-native install react-native-blink-view
 
 ## Usage
 ```javascript
-import BlinkView from 'react-native-blink-view';
+import BlinkView from 'react-native-blink-view'
 
 // 1 - Blinking button that blink every 2 sec.
 // 2 - Blinking word in a text.
@@ -38,10 +38,10 @@ render() {
         accusantium doloremque laudantium, totam rem aperiam eaque ipsa,
         quae ab illo inventore <BlinkView element={Text}>veritatis</BlinkView>
         et quasi architecto beatae vitae dicta sunt...
-      </Text
+      </Text>
 
     </View>
-  );
+  )
 }
 ```
 
