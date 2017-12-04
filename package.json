@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/BricePissard/react-native-blink-view#readme",
   "dependencies": {
-    "prop-types": "^15.6.0",
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "eslint": "^3.16.0",
