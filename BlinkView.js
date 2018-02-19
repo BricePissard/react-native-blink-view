@@ -64,7 +64,7 @@ export default class BlinkView extends Component
     }
   }
 
-  componentWillMount():void
+  componentDidMount():void
   {
     try
     {

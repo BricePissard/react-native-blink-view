@@ -1,6 +1,6 @@
 {
   "name": "react-native-blink-view",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A <BlinkView /> component for react-native to make blinking subviews",
   "main": "BlinkView.js",
   "scripts": {
@@ -34,8 +34,8 @@
   },
   "devDependencies": {
     "eslint": "^3.16.0",
-    "react": "16.0.0",
-    "react-native": "0.50.4"
+    "react": "^16.0.0",
+    "react-native": "^0.53.0"
   },
   "peerDependencies": {
     "react": "*",
