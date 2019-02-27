@@ -103,7 +103,7 @@ export default class BlinkView extends Component
   {
     try
     {
-      const isBlinking:bolean = this.props && this.props.blinking || true;
+      const isBlinking: bolean = (this.props && this.props.blinking) || false;
       const Element:any = ( ( isBlinking === true ) ? Animated.createAnimatedComponent( this.props && this.props.element || View ) : this.props && this.props.element || View );
 
       return  (
