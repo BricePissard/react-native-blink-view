@@ -77,7 +77,7 @@ export default class BlinkView extends Component
           Animated.timing( this.state.blinkAnim, {
             toValue: this.state.blinkAnim._value === 0 ? 1 : 0,
             duration: this.state.delay-1,
-            useNativeDriver: true
+            useNativeDriver: false
           }).start();
         }, this.state.delay+1 );
       }
