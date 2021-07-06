@@ -33,7 +33,7 @@
     "prop-types": "^15.6.0"
   },
   "devDependencies": {
-    "eslint": "^3.16.0",
+    "eslint": "^7.5.0",
     "react": "^16.0.0",
     "react-native": "^0.53.0"
   },
