@@ -1,6 +1,6 @@
 {
   "name": "react-native-blink-view",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A <BlinkView /> component for react-native to make blinking subviews",
   "main": "BlinkView.js",
   "scripts": {
